@@ -1,0 +1,291 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Open Sans';
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+section {
+    background: #F6F7F8;
+}
+
+
+.container {
+    padding: 35px 75px;
+    display: flex;
+}
+
+.left-content {
+    background-image: linear-gradient(0deg, rgba(94, 80, 161, .8), rgba(94, 80, 161, .8)), url('../images/bgLogin.jpg');
+    background-size: cover;
+    padding: 35px;
+    height: 822px;
+    box-sizing: border-box;
+    max-width: 650px;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5E50A1;
+}
+
+.left-content p {
+    color: white;
+    font-weight: bolder;
+    font-size: 44px;
+    line-height: 70px;
+    margin-top: 200px;
+    z-index: 1;
+}
+
+.rigth-content {
+    padding: 145px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rigth-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    columns: #1F2A36;
+    margin-bottom: 20px;
+}
+
+.rigth-content p {
+    font-size: 18px;
+    color: #1F2A36;
+    margin-bottom: 80px;
+    line-height: 24.51px
+}
+
+.input-form label {
+    display: block;
+    font-size: 12px;
+    color: #9EA0A5;
+    margin: 6px 3px;
+}
+
+.input-form {
+    padding-bottom: 35px;
+    width: 100%;
+}
+
+.input-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #858D96;
+    border: 1px solid #E2E5ED;
+    border-radius: 4px;
+
+}
+
+.input-form input:focus {
+    outline: none;
+    border: 1px solid #FBB017;
+}
+
+.forgot {
+    text-align: right;
+}
+
+.forgot a {
+    color: #1F2A36;
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    color: #FBB017;
+}
+
+.btnMasuk {
+    background-color: #FBB017;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.signup {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1F2A36;
+    text-align: center;
+}
+
+.signup a {
+    color: #FBB017;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {}
+
+/* Aturan CSS untuk layar menengah (tablet) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .left-content {
+        display: none;
+    }
+
+    .container {
+        padding: 1px 1px;
+    }
+
+}
+
+/* Aturan CSS untuk layar kecil (ponsel) */
+@media screen and (max-width: 767px) {
+
+    .left-content {
+        display: none;
+    }
+
+    .container {
+        padding: 1px 1px;
+    }
+}
